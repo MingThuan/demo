@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "7c84c65d-6b5e-4d56-9d43-88d827bf019f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 272,
+  "height": 34,
+  "platformSettings": {},
+  "subMetas": {
+    "Gift Zone of MytelPay": {
+      "ver": "1.0.4",
+      "uuid": "30d1caad-1d8e-46a8-a993-61c9e243d700",
+      "rawTextureUuid": "7c84c65d-6b5e-4d56-9d43-88d827bf019f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 270,
+      "height": 33,
+      "rawWidth": 272,
+      "rawHeight": 34,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
