@@ -43,10 +43,15 @@
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <div id="splash">
-    <div class="bg-progress-bar"></div>
-    <div class="progress-bar">
-      <span style="width: 0%"></span>
+    <div id="decor"></div>
+    <div class="bg-progress-bar">
+      <div class="progress-bar">
+        <span style="width: 0%"></span>
+      </div>
     </div>
+    <div id="logo"></div>
+    <div id="Welcometo"></div>
+    <div id="title"></div>
     
     <div id="tree"></div>
     <!-- <div id="santa"></div> -->
@@ -54,9 +59,9 @@
 
   <canvas id="loading-canvas" style="position: absolute; width: 100%; height: 100%; visibility: hidden;" width="750" height="1334" oncontextmenu="event.preventDefault()"></canvas>
 
-<script src="src/settings.dcb84.js" charset="utf-8"></script>
+<script src="src/settings.1a87d.js" charset="utf-8"></script>
 
-<script src="main.ec0d6.js" charset="utf-8"></script>
+<script src="main.578c3.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -133,7 +138,7 @@
 
     var posStartX = canvas.width*9.5/100;
     var posEndX = canvas.width*77/100;
-    var posY = canvas.height*47.5/100
+    var posY = canvas.height*45.5/100
 
     function loadImage(onComplete){
       var total = 0;
