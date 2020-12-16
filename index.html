@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Internal Mytelpay</title>
+  <title>MytelPay Lucky Game</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -47,15 +47,16 @@
     <div class="progress-bar">
       <span style="width: 0%"></span>
     </div>
+    
     <div id="tree"></div>
     <!-- <div id="santa"></div> -->
   </div>
 
   <canvas id="loading-canvas" style="position: absolute; width: 100%; height: 100%; visibility: hidden;" width="750" height="1334" oncontextmenu="event.preventDefault()"></canvas>
 
-<script src="src/settings.fd37c.js" charset="utf-8"></script>
+<script src="src/settings.62f7f.js" charset="utf-8"></script>
 
-<script src="main.edc0c.js" charset="utf-8"></script>
+<script src="main.87712.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -241,7 +242,7 @@
 
       this.render = function(ctx){
         var img = imgs[this.frameIndex];
-        ctx.drawImage(img, 0, 0, img.width, img.height, this.x + myOffsetX, this.y, img.width * scale, img.height * scale);
+        ctx.drawImage(img, 0, 0, img.width, img.height, this.x, this.y, img.width * scale, img.height * scale);
       };
     }
 
