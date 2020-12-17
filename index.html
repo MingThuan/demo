@@ -54,14 +54,13 @@
     <div id="title"></div>
     
     <div id="tree"></div>
-    <!-- <div id="santa"></div> -->
   </div>
 
   <canvas id="loading-canvas" style="position: absolute; width: 100%; height: 100%; visibility: hidden;" width="750" height="1334" oncontextmenu="event.preventDefault()"></canvas>
 
-<script src="src/settings.1a87d.js" charset="utf-8"></script>
+<script src="src/settings.e68c7.js" charset="utf-8"></script>
 
-<script src="main.578c3.js" charset="utf-8"></script>
+<script src="main.c28ce.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -168,18 +167,6 @@
     }
 
     function animateLoading(){
-      // var bird = new animation([
-      //   loadingDefines.imgs.bird01.obj,
-      //   loadingDefines.imgs.bird02.obj,
-      //   loadingDefines.imgs.bird03.obj,
-      //   loadingDefines.imgs.bird04.obj,
-      //   loadingDefines.imgs.bird05.obj,
-      //   loadingDefines.imgs.bird06.obj,
-      //   loadingDefines.imgs.bird07.obj,
-      //   loadingDefines.imgs.bird08.obj,
-      //   loadingDefines.imgs.bird09.obj,
-      //   loadingDefines.imgs.bird10.obj,
-      // ], 4, 0.25);
       var santa = new animation([
         loadingDefines.imgs.santa_0.obj,
         loadingDefines.imgs.santa_1.obj,
@@ -188,30 +175,18 @@
         loadingDefines.imgs.santa_4.obj,
         loadingDefines.imgs.santa_5.obj
       ], 4, 0.31);
-      // var rocket = new animation([
-      //   loadingDefines.imgs.rocket01.obj,
-      //   loadingDefines.imgs.rocket02.obj,
-      //   loadingDefines.imgs.rocket03.obj,
-      // ], 5, 0.5);
 
-      // bird.setPos(canvas.width / 2 + 70, canvas.height / 2 - 250);
-      santa.setPos(posStartX, posY);
-      // rocket.setPos(canvas.width / 2 - 190, canvas.height / 2 - 125);
+      santa.setPos(posEndX, posY);
 
       function loop() {
-        // console.log(window.totalPercent);
         var current = Date.now();
         var dt = (current - start) / 1000;
         start = current;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // bird.update(dt);
-        // bird.render(ctx);
         santa.update(dt);
         santa.render(ctx);
-        // rocket.update(dt);
-        // rocket.render(ctx);
 
         if(window.totalPercent){
           santa.setPos((posEndX - posStartX) * totalPercent, posY);
@@ -247,7 +222,7 @@
 
       this.render = function(ctx){
         var img = imgs[this.frameIndex];
-        ctx.drawImage(img, 0, 0, img.width, img.height, this.x, this.y, img.width * scale, img.height * scale);
+        ctx.drawImage(img, 0, 0, img.width, img.height, this.x+myOffsetX*2, this.y, img.width * scale, img.height * scale);
       };
     }
 
