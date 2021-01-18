@@ -87,74 +87,27 @@ p.footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #171717 url(./loading.png) no-repeat center;
+  background: #171717 url(./bg.jpg) no-repeat center;
   background-size: cover;
 }
 
-#tree {
-  position: absolute;
-  top: 43.5%;
-  left: 79.5%;
-  width: 10%;
-  height: 7%;
-  background: url(./tree.png) no-repeat center;
-  background-size: contain;
-}
-#decor {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 7%;
-  background: url(./decor.png) no-repeat center;
-  background-size: cover;
-}
-#logo {
-  position: absolute;
-  top: 66%;
-  left: 30%;
-  width: 40%;
-  height: 7%;
-  background: url(./logo.png) no-repeat center;
-  background-size: contain;
-}
-#Mylatsong {
-  position: absolute;
-  top: 66%;
-  left: 10%;
-  width: 80%;
-  height: 35%;
-  background: url(./mylatsong.png) no-repeat center;
-  background-size: contain;
-}
-
-.snow-bar {
-  position: absolute;
-  top: -8%;
-  left: 0.5%;
-  width: 100%;
-  height: 15px;
-  background: url(./snowBar.png) no-repeat center;    
-  background-size: cover;    
-  /* border-radius: 9px; */
-}
 .progress-bar {
     position: absolute;
-    left: 10%;
+    left: 27.5%;
     top: 50%;
-    height: 15px;
+    height: 3px;
     padding: 2px;
-    width: 80%;
-    border-radius: 29px;
-    background-color: #FCF4DA;
+    width: 45%;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
 }
 
 .progress-bar span {
     display: block;
     height: 100%;
-    border-radius: 28px;
+    border-radius: 3px;
     transition: width .4s ease-in-out;
-    background-color: #FFC40C;
+    background-color: #FF4800;
 }
 
 .stripes span {
